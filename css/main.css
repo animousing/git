@@ -1,0 +1,230 @@
+@charset "UTF-8";
+* {
+  /*Reinicio de los margenes de los navegadores*/
+  margin: 0;
+  padding: 0; }
+  
+
+header .logoNavegador {
+  /*
+-------------------------------------------
+ Dimensiones del logo en barra de navegacion
+ --------------------------------------------
+*/
+  width: 150px;
+  height: 150px; }
+
+header .ContNavSec {
+  /*
+--------------------------------------------------------------
+Seccion navegador y aside del html index.
+Se genera un contenedor div con las dos etiquetas.
+Botones en en una columna alado del video reproduciendose en loop
+------------------------------------------------------------------
+*/
+  background-color: black;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  height: 800px; }
+
+header #menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap; }
+  header #menu ul a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 5px; }
+    
+  header #menu ul #item {
+    /*
+-----------------------------------------------------------------------------
+Propidades de colores de texto y botones a la lista de opciones del navegador
+-----------------------------------------------------------------------------
+*/
+    background-color: black;
+    color: white;
+    padding: 20px; }
+    header #menu ul #item a {
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      font-size: 1.5em;
+      margin: 5px; }
+  /*
+header .seccionVideo {
+
+----------------------------------------
+Dimensiones del video de la pagina index
+----------------------------------------
+
+  width: 1740px;
+  height: 90vh; }
+  */
+
+.seccionCliente {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .seccionCliente .indexCLientes {
+    margin: 10px;
+    width: 550px;
+    height: 550px;
+    border-bottom: 2px solid #e0e0e0;
+    border-right: 2px solid #e0e0e0; }
+
+.piePagina {
+  /*
+-------------------------------------------------------------------
+Se le da un margen izquierdo de 25px al pie de pagina en el footer
+------------------------------------------------------------------
+*/
+  margin-left: 25px;
+  /*
+-----------------------------------------------------------------
+Propiedades de margenes y tamaño a las imagenes de redes sociales
+------------------------------------------------------------------
+*/ }
+  .piePagina .redesLogo {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px; }
+
+.NosotrosDiv {
+  /*
+-----------------------------------------------------------------
+Se genera un div en la seccion nosotros, donde comparte las opciones
+del navegador con el banner del logo de la empresa
+------------------------------------------------------------------
+*/
+  background-color: black;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  height: 50vh; }
+  .NosotrosDiv img {
+    width: 100%; }
+
+.ServiciosDiv {
+  /*
+-----------------------------------------------------------------
+Se genera un div en la seccion servicios, donde comparte las opciones
+del navegador con el banner del logo de la empresa
+------------------------------------------------------------------
+*/
+  background-color: black;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  height: 800px; }
+
+.TrabajosDiv {
+  /*
+-------------------------------------------------------
+Seccion navegador y aside de la pagina de trabajos.
+Se genera un contenedor div con las dos etiquetas.
+Botones en columna alado de la imagen principal de trabajos
+------------------------------------------------------------
+*/
+  background-color: black;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  height: 800px; }
+
+.ContactoDiv {
+  /*
+---------------------------------------------------
+Seccion navegador y aside de la pagina de contacto.
+Se genera un contenedor div con las dos etiquetas.
+Botones en columna alado de la imagen principal de contacto
+------------------------------------------------------------
+*/
+  background-color: black;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  height: 800px; }
+
+.titulos {
+  /*
+----------------------------------------------------------------------
+Propiedad de estilos de colores, tamaños y fuentes para 
+las secciones de nosotros, trabajos, servicios y contacto en los titulos
+-------------------------------------------------------------------------
+*/
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: red;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 45px;
+  font-family: 'Architects Daughter', cursive, 'Caveat', cursive,'Lobster', cursive;
+  text-transform: uppercase; }
+
+.parrafo {
+  /*
+--------------------------------------------------------------------------
+Propiedad de estilos de colores, tamaños y fuentes para 
+las secciones de nosotros, trabajos, servicios y contacto en los parrafos
+----------------------------------------------------------------------------
+*/
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: black;
+  font-weight: bolder;
+  font-size: 25px;
+  font-family: fantasy,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: left,justify; }
+
+form {
+  /*
+-------------------------------------------------------------
+Todo este codigo es para el formulario de ña seccion contacto
+-------------------------------------------------------------
+*/
+  width: 450px;
+  margin: auto;
+  background: silver;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 5px; }
+  form .formularioH1 {
+    text-align: center;
+    padding-top: 80px;
+    font-size: 50px;
+    color: #1d521f;
+    font-family: 'Architects Daughter', cursive, 'Caveat', 
+ cursive,'Lobster', cursive;
+    text-transform: uppercase; }
+  form h2 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px; }
+  form input, form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20px; }
+  form textarea {
+    min-height: 100px;
+    max-height: 100px;
+    max-width: 100%;
+    min-width: 100%; }
+  form #boton {
+    color: white;
+    background-color: #aaaaaa;
+    border: none; }
+  form #boton:hover {
+    background-color: #308bd6; }
